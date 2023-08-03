@@ -71,11 +71,13 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| UNO R3 Controller Board | This is the "powerhouse" of my poject; contains the VCC and Ground power, as well as numerous ananlog and digital inputs that are nesscary for the OLED, DHT11, and the MQ135 | $16.99 | <a href="https://a.co/d/5OrLeQE/"> Link </a> |
+| UNO R3 Controller Board | This is the "powerhouse" of my poject; contains the VCC and Ground power, as well as numerous ananlog and digital inputs that are nesscary for numerous components | $16.99 | <a href="https://a.co/d/5OrLeQE/"> Link </a> |
 | 830 Tie-Points Breadboard | Powers up the components, it's the area where you "work" in | $9.99 | <a href="https://a.co/d/5oY5jsG/"> Link </a> |
-| Prototye Expansion Module | What the item is used for | $9.99 | <a href="https://a.co/d/0Te8LhG/"> Link </a> |
-| DHT11 Temperature and Humidity Module| This items reads the temperature, humidity and heat index in the the given area and outputs it as a value | $7.99 | <a href="https://a.co/d/bO8Tz7F/"> Link </a> |
-| MQ135 Air Quality Sensor | This component reads the gas level in the current area and outputs it as an analog value; below 181 is good, while above 181 is poor | $7.99 | <a href="https://a.co/d/14zhDB1/"> Link </a> |
+| 0.96" OLED Module | Displays the Air Quality, Temeprature and Humidity readings from the MQ135 and the DHT11 | $6.99 | <a href="https://a.co/d/eRnV0wp/"> Link </a> |
+| DHT11 Temperature and Humidity Module| A component that reads  temperature, humidity and heat index in a given area | $7.99 | <a href="https://a.co/d/j9o82sl/"> Link </a> |
+| MQ135 Air Quality Sensor | This component reads the gas level in the current area and outputs it as an analog value | $3.99 | <a href="https://a.co/d/iWFomzP/"> Link </a> |
+| Breadboard Jumper Wire | Conects pins in different components to its nesscary (analog or digital) input and the power needed (5V or Ground) | $6.99 | <a href="https://a.co/d/14zhDB1/"> Link </a> |
+| Female-to-Male Dupont Wire | Connect pins in OLED Screen to same rows where the analog inputs and ground/5v power are, allowing OLED to strech and be more visible to users | $3.99 | <a href="https://a.co/d/5k2gFZq/"> Link </a> |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
