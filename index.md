@@ -82,5 +82,6 @@ Don't forget to place the link of where to buy each component inside the quotati
 | MQ135 Air Quality Sensor | This component reads the gas level in the current area and outputs it as an analog value | $3.99 | <a href="https://a.co/d/iWFomzP/"> Link </a> |
 | Breadboard Jumper Wire | Conects pins in different components to its nesscary (analog or digital) input and the power needed (5V or Ground) | $6.99 | <a href="https://a.co/d/14zhDB1/"> Link </a> |
 | Female-to-Male Dupont Wire | Connect pins in OLED Screen to same rows where the analog inputs and ground/5v power are, allowing OLED to strech and be more visible to users | $3.99 | <a href="https://a.co/d/5k2gFZq/"> Link </a> |
-
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
+| Passive Buzzers | Outputs a rythimic buzzing sound; used in my project as an alarm for people to be notified if the air quality starts to become bad| $7.28 | <a href="https://a.co/d/dd3wbt5/"> Link </a> |
+| Resistors (10K)| "Soaks" some of the volatage or ground power, sends the remaining to component (which is the led lights for my project)| $5.99 | <a href="https://a.co/d/1YIcyh2/"> Link </a> |
+| LED Lights| Made a mini circuit where either a red, green, or yellow LED light will blink based on how good/bad the air quality currently is | $5.99 | <a href="https://a.co/d/3pzpUCf/"> Link </a> |
