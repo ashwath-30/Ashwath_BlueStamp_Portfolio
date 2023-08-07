@@ -47,7 +47,7 @@ From my second milestone, I have added an OLED Screen where the Air Quality, Tem
 The DHT11 and the MQ-135 air quality sensor are required for this first milestone video. A power connection with 5 volts and ground is necessary for these components. Connect the red wire to the positive rails at the breadboard's tail end to charge the column. Next, connect the green and yellow wires to the rows where the center pins of the DHT11 and MQ-135 are located. The negative railing at the breadboard's back end is where the ground wire is attached. The pins on each component's orange and blue wires should be connected. The red wire in the MQ-135 is linked from the analog input A0 in the controller board, and the third yellow wire in the DHT11 is connected from the digital 2 input in the R3 controller board to the DHT11's leftmost pin. The Adafruit DHT library was included to link the code to the parts. The code reads air quality from the MQ-135 input and temperature, humidity, and heat index from the DHT input. Although the air quality is not quite right now, it should improve as the project goes on.
 
 # Schematics 
-Screenshot 2023-08-07 7.38.44 AM.png
+[Image] ([Screenshot 2023-08-07 7.38.44 AM.png](url))
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
