@@ -57,6 +57,10 @@ Entire Project With Modifications Schematics:
 
 *Tinkercad doesn't have the latest version of the LCD screen, the mq135 gas sensor, and the dht11 module, so the wiring is different here than compared to my actual project. But this is what the wiring would be like if I had those versions of those particular parts.
 
+What I've Built: 
+![MyProjectSchem Image](RealProjectSchematics.jpg)
+
+
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
