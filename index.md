@@ -65,16 +65,181 @@ What I've Built:
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include  <Adafruit_SSD1306.h>
+#include <Fonts/FreeSans9pt7b.h>
+#include <Fonts/FreeMonoOblique9pt7b.h>
+#include  <DHT.h>
+#define SCREEN_WIDTH 128
+#define  SCREEN_HEIGHT 64 
+
+#define OLED_RESET     4   
+Adafruit_SSD1306 display(SCREEN_WIDTH,  SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+#define sensor    A0 
+#define DHTPIN  2          
+#define DHTTYPE DHT11     
+
+int gasLevel  = 0;         
+String quality =""; 
+DHT dht(DHTPIN,  DHTTYPE);
+
+int buzzerPin = 8;
+
+void sendSensor()
+{
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+  t = t * 1.8 + 32 ;
+
+  if (isnan(h) || isnan(t)) {
+  Serial.println("Failed  to read from DHT sensor!");
+    return;
+    
+  }
+  display.setTextColor(WHITE);
+  display.setTextSize(1);
+  display.setFont();
+  display.setCursor(0, 43);
+  display.println("Temperature: ");
+  display.setCursor(80, 43);
+  display.println(t);
+  display.setCursor(114, 43);
+  display.println("F");
+  display.setCursor(0,  56);
+  display.println("Humidity: ");
+  display.setCursor(80, 56);
+  display.println(h);
+  display.setCursor(114, 56);
+  display.println("%");
+}
+
+void air_sensor()
+{
+  gasLevel = analogRead(sensor);
+
+  if(gasLevel<100){
+    quality = "GREAT!";
+  }
+  else if (gasLevel >= 100 && gasLevel<181){
+    quality =  "GOOD!";
+  }
+   else if (gasLevel >= 181 && gasLevel<225){
+    quality =  "Poor!";
+  }
+  else if (gasLevel >= 225 && gasLevel<300){
+    quality  = "BAD!";
+  }
+    else if (gasLevel >= 300 && gasLevel<350){
+    quality  = "Toxic";
+  }
+    else{
+    quality = "Wrong";   
+}
+
+  display.setTextColor(WHITE);
+  display.setTextSize(1);  
+  display.setCursor(1,5);
+  display.setFont();
+  display.println("Air Quality:");
+  display.setTextSize(1);
+  display.setCursor(10,23);
+  display.setFont(&FreeMonoOblique9pt7b);
+  display.println(quality + "(" + gasLevel + ")");  
+  delay(5000);
+
+  if (gasLevel>225) {
+    Serial.println(gasLevel);
+    tone(buzzerPin, 440);
+    delay(1000);
+
+    tone(buzzerPin, 494);
+    delay(1000);
+
+    tone(buzzerPin, 523); 
+    delay(1000);
+
+    tone(buzzerPin, 587); 
+    delay(1000);
+
+    tone(buzzerPin, 659); 
+    delay(1000);
+
+    tone(buzzerPin, 698); 
+    delay(1000);
+
+    tone(buzzerPin, 784); 
+    delay(1000);
+
+    noTone(buzzerPin);
+    delay(1000);
+  }
+
+  if (gasLevel<181) {
+    Serial.println(gasLevel);
+    digitalWrite(13, HIGH);
+    delay(1000);
+    digitalWrite(13, LOW);
+    delay(1000);
+  }
+  else if (gasLevel >= 181 && gasLevel < 225) {
+    Serial.println(gasLevel);
+    digitalWrite(12, HIGH);
+    delay(2000);
+    digitalWrite(12, LOW);
+    delay(2000);
+  }
+  else {
+    digitalWrite(11, HIGH);
+    delay(2000);
+    digitalWrite(11, LOW);
+    delay(2000);
+  }
+}
+
+
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.println("Hello World!");
+  pinMode(sensor,INPUT);
+  pinMode(buzzerPin, OUTPUT);
+  tone(buzzerPin, 1000, 2000);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  dht.begin();
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3c)) { 
+    Serial.println(F("SSD1306 allocation failed"));
+}
+  display.clearDisplay();
+  display.setTextColor(WHITE);
+  
+  display.setTextSize(2);
+  display.setCursor(50, 0);
+  display.println("Air");
+  display.setTextSize(1);
+  display.setCursor(23, 20);
+  display.println("Quality monitor");
+  display.display();
+  delay(1200);
+  display.clearDisplay();
+  
+  display.setTextSize(1);
+  display.setCursor(20, 20);
+  display.println("BY Ashwath S.");
+  display.display();
+  delay(2000);
+  display.clearDisplay();  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+display.clearDisplay();
+air_sensor();
+sendSensor();
+display.display();  
 }
+
 ```
 
 # Bill of Materials 
