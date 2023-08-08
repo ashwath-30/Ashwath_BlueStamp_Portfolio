@@ -51,6 +51,10 @@ The DHT11 and the MQ-135 air quality sensor are required for this first mileston
 Base Project Schematics:
 ![BaseSchem Image](BaseSchematics.png)
 
+
+Entire Project With Modifications Schematics:
+! [FullSchem Image](FullSchematics.png)
+
 *Tinkercad doesn't have the latest version of the LCD screen, the mq135 gas sensor, and the dht11 module, so the wiring is different here than compared to my actual project. But this is what the wiring would be like if I had those versions of those particular parts.
 
 # Code
@@ -69,9 +73,7 @@ void loop() {
 }
 ```
 
-# Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+# Bill of Materials 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
