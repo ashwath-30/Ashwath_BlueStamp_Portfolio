@@ -1,11 +1,6 @@
 # BlueStamp - The Air Quality Monitor
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+There are aproximatley 100 Million Americans in risk of death or severe illness due to poor air quality. These people don't even know wether they live in clean or polluted areas. The reason I chose this Air Quality monitor is because I wanted to make something that can actually be used in real life. This Air quality monitor can help people identify wether or not they live in good coniditions and make a descion based on the information they are getting. Throughout this project, I have learned a lot of new skills, like breadboarding, wiring, coding, and, in general, better knowledge of how each component works. But the most important skill I learned is determination, and how to continue trying when things go wrong. Overall, I had a great expeirence with BlueStamp and engineering, which I will show you in depth below. 
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
