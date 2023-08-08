@@ -53,7 +53,7 @@ Base Project Schematics:
 
 
 Entire Project With Modifications Schematics:
-! [FullSchem Image](FullSchematics.png)
+![FullSchem Image](FullSchematics.png)
 
 *Tinkercad doesn't have the latest version of the LCD screen, the mq135 gas sensor, and the dht11 module, so the wiring is different here than compared to my actual project. But this is what the wiring would be like if I had those versions of those particular parts.
 
