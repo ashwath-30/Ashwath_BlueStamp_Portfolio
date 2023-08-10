@@ -15,7 +15,7 @@ There are many humans at risk of death or severe illness due to poor air quality
 # Final Milestone
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="684" height="385" src="https://www.youtube.com/embed/sA4SHZNsToI" title="Ashwath S. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 My final milestone was the modifications that I added on to my base project. The first modification was the buzzer, which requires a digital connection and a ground power connection. I programmed the buzzer so that it plays of every time the air quality goes above 225, which is when the air quality is considered bad. My second big modification was the LED Lights I installed, a green, yellow, and red one. The LED Lights also required a ground power connection and a digital pin connection. I programmed the code so that the Green LED Light flashes where the Air Quality is good (<181), the Yellow flashes when it's poor (>181 but <225), and the red flashes when the air quality is bad or etc (>225). In this milestone, I struggled with the code mostly, espceially on where to place the codes for my buzzer & LED lights in my overall base project code. If I placed those individual codes in the wrong place, then the whole thing doesn't work. But I eventually  figured out where they go so that it correlates at the proper time. Throughout my tenure at BlueStamp, I have learned a lot about how engineering and electronics work, especially considering that I used to be a novice at these topics. But in these 3 weeks, I have learned so much information and knowledge. I want to continue exceling in this path about electronics engineering that BlueStamp paved for me. 
@@ -52,7 +52,6 @@ What I've Built:
 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 ```c++
 #include <SPI.h>
