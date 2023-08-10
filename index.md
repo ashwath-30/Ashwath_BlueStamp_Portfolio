@@ -1,37 +1,32 @@
 # BlueStamp - The Air Quality Monitor
-There are many humans in risk of death or severe illness due to poor air quality. These people don't even know wether they live in clean or polluted areas. The reason I chose this Air Quality monitor is because I wanted to make something that can actually be used in real life. This Air quality monitor can help people identify wether or not they live in good coniditions and make a descion based on the information they are getting. Throughout this project, I have learned a lot of new skills, like breadboarding, wiring, coding, and, in general, better knowledge of how each component works. But the most important skill I learned is determination, and how to continue trying when things go wrong. Overall, I had a great expeirence with BlueStamp and engineering, which I'll show you in depth below. 
+There are many humans at risk of death or severe illness due to poor air quality. These people don’t even know whether they live in clean or polluted areas. The reason I chose this Air Quality monitor is because I wanted to make something that can actually be used in real life. This Air quality monitor can help people identify whether or not they live in good conditions and make a decision based on the information they are getting. Throughout this project, I have learned a lot of new skills, like breadboarding, wiring, coding, and, in general, better knowledge of how each component works. But the most important skill I learned is determination, and how to continue trying when things go wrong. Overall, I had a great experience with BlueStamp and engineering, which I’ll show you in depth below.
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ashwath S | Northwood High School | Electronic Engineering | Incoming Sophmore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
 ![Headstone Image](logo.svg)
-  
+
+
+# Demo Night Presentation 
+
+
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
 
-
+My final milestone was the modifications that I added on to my base project. The first modification was the buzzer, which requires a digital connection and a ground power connection. I programmed the buzzer so that it plays of every time the air quality goes above 225, which is when the air quality is considered bad. My second big modification was the LED Lights I installed, a green, yellow, and red one. The LED Lights also required a ground power connection and a digital pin connection. I programmed the code so that the Green LED Light flashes where the Air Quality is good (<181), the Yellow flashes when it's poor (>181 but <225), and the red flashes when the air quality is bad or etc (>225). In this milestone, I struggled with the code mostly, espceially on where to place the codes for my buzzer & LED lights in my overall base project code. If I placed those individual codes in the wrong place, then the whole thing doesn't work. But I eventually  figured out where they go so that it correlates at the proper time. Throughout my tenure at BlueStamp, I have learned a lot about how engineering and electronics work, especially considering that I used to be a novice at these topics. But in these 3 weeks, I have learned so much information and knowledge. I want to continue exceling in this path about electronics engineering that BlueStamp paved for me. 
 
 # Second Milestone
-
 
 
 <iframe width="873" height="491" src="https://www.youtube.com/embed/Hgh8jh2m8U4" title="Ashwath S. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-From my second milestone, I have added an OLED Screen where the Air Quality, Temperature, and Humidity are being displayed instead of being in a computer. With the ground and 5V power wires already established, I connected the positive (for the 5V) and the negative (for the ground) ends of the breadboard with jumper wires and connected them to their repsectives rows to charge the OLED Screen. The Screen also required and analog input of A4 and A5 for the SCL and SDA. Then, I added code making conditionals for the for the air quality; if below 100, the air quality is great, if above 100 but less than 181, then its good, if above 181 but less than 225 then poor, and etc. Then, I defined my fonts and made code for how the text will be displayed on screen, when it will be displayed, and what is going to be displayed there. My biggest constraint was that I was consitantly getting inaccurate reading, like it my air quality (only) would show that the air qualiy is toxic when I know it clearly is not. But I resolved this problem by adding a resistor, so that the air quality sensor wouldn't take in too much voltage power, as the resistor will "soak" some of the voltage. For my milestone 3, I work towards perfecting my project and start working heavily on cool modifications. 
+From my second milestone, I have added an OLED Screen where the Air Quality, Temperature, and Humidity are being displayed instead of being in a computer. With the ground and 5V power wires already established, I connected the positive (for the 5V) and the negative (for the ground) ends of the breadboard with jumper wires and connected them to their respective rows to charge the OLED Screen. The Screen also required an analog input of A4 and A5 for the SCL and SDA. Then, I added code making conditionals for the air quality; if below 100, the air quality is great, if above 100 but less than 181, then it's good, if above 181 but less than 225 then poor, and etc. Then, I defined my fonts and made code for how the text will be displayed on screen, when it will be displayed, and what is going to be displayed there. My biggest constraint was that I was constantly getting inaccurate reading, like it my air quality (only) would show that the air quality is toxic when I know it clearly is not. But I resolved this problem by adding a resistor, so that the air quality sensor wouldn’t take in too much voltage power, as the resistor will “soak” some of the voltage. For my milestone 3, I work towards perfecting my project and start working heavily on cool modifications.
 
 # First Milestone
 
