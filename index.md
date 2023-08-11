@@ -6,7 +6,7 @@ There are many humans at risk of death or severe illness due to poor air quality
 |:--:|:--:|:--:|:--:|
 | Ashwath S | Northwood High School | Electronic Engineering | Incoming Sophmore
 
-![Headstone Image](logo.svg)
+![Headstone Image](FinalProject_IMG.jpg)
 
 
 # Demo Night Presentation 
