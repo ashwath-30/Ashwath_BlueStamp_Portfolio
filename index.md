@@ -9,9 +9,6 @@ There are many humans at risk of death or severe illness due to poor air quality
 ![Headstone Image](FinalProject_IMG.jpg)
 
 
-# Demo Night 
-
-
 # Final Milestone
 
 
